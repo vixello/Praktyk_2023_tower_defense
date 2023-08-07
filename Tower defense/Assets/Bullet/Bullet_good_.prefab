@@ -74,12 +74,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aec4017399faa0344880e9ca09bb5778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
-  bulletSpeed: 2
-  bulletColor: {r: 0, g: 1, b: 0, a: 1}
-  bulletHitEffect: {fileID: 5857582455208538319, guid: 12b65dc8727527c4d88d61307853fc40, type: 3}
-  bulletHitEffect2: {fileID: 3502015960070839658, guid: d167ded78a494bc4f8b9559b8bb2121b, type: 3}
-  enemy: {fileID: 0}
+  BulletDamage: 0
+  BulletColor: {r: 0, g: 1, b: 0, a: 1}
+  BulletTargetEnemy: {fileID: 0}
+  BulletHitEffect: {fileID: 5857582455208538319, guid: 12b65dc8727527c4d88d61307853fc40, type: 3}
+  BulletHitEffect2: {fileID: 3502015960070839658, guid: d167ded78a494bc4f8b9559b8bb2121b, type: 3}
 --- !u!61 &-4130856628887840159
 BoxCollider2D:
   m_ObjectHideFlags: 0
