@@ -58,7 +58,7 @@ public class Bullet : MonoBehaviour
             DealDamage(BulletDamage);
 
             GameObject hitEffect = (BulletColor == Color.blue) ? BulletHitEffect : BulletHitEffect2;
-            doAnEffect(hitEffect);
+            DoAnEffect(hitEffect);
 
             Destroy(gameObject);
         }
@@ -71,11 +71,11 @@ public class Bullet : MonoBehaviour
             // regarding of color and wall type there is a different effect
             if (bulletColor == Color.blue && (wallTag == "turretWall2" || wallTag == "Wall")){
                 
-                doAnEffect(BulletHitEffect);
+                DoAnEffect(BulletHitEffect);
             }
             else if (bulletColor == Color.green && (wallTag == "turretWall1" || wallTag == "Wall")){
                 
-                doAnEffect(BulletHitEffect2);
+                DoAnEffect(BulletHitEffect2);
             }
 
             Destroy(gameObject);
@@ -83,9 +83,9 @@ public class Bullet : MonoBehaviour
 
     }
 
-    private void doAnEffect(GameObject bulletHitEffect)
+    private void DoAnEffect(GameObject gameEffect)
     {
-        GameObject effect = Instantiate(bulletHitEffect, transform.position, Quaternion.identity);
+        GameObject effect = Instantiate(gameEffect, transform.position, Quaternion.identity);
         Destroy(effect, 0.45f);
     }
 }
